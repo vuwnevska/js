@@ -1,0 +1,12 @@
+.first-color {
+    background-color: aquamarine;
+    color: green;
+}
+.second-color {
+    background-color: red;
+    color: red;
+}
+
+body {
+    background-color: lightblue;
+  }
