@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<div id="box1">First box</div>
+<div id="box2">Second box</div>
+<script>
+    function animateIt(elementId, interval){
+        var element = document.getElementById(elementId);
+        var tick = 0; 
+        var timer = setInterval(function(){
+            if (tick < 100){
+                element.setAttribute('style', 'margin-top:'+tick+'px;');
+                tick++;
+                console.log('move ', tick, timer);
+            }
+            else{
+                clearInterval(timer);
+                console.log('clear ', tick, timer);
+            }
+        }, interval);
+    }
+    animateIt("box1", 100);
+    animateIt("box2", 10);
+</script>
